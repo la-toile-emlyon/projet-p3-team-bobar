@@ -48,5 +48,12 @@ footer{
     justify-content: space-around;
     background-color: rgb(142, 115, 35);
 }
+ .sukuna{
+    height: 200px;
+    width: 120%;
+    background-color: beige;
+    border-radius: 2%; }
+
+    
 
  
