@@ -9,6 +9,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 img{
     height: 50px;
@@ -47,3 +48,5 @@ footer{
     justify-content: space-around;
     background-color: rgb(142, 115, 35);
 }
+
+ 
