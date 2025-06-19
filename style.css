@@ -1,4 +1,15 @@
+@font-face {
+  font-family: 'gt-maru';
+  src: url('GTMaruVF-Regular.otf') format('opentype');
+}
+
+
 html {
   height: 100%;
   width: 100%;
+  font-family: 'gt-maru', sans-serif ;
+}
+
+p{
+  color: blue;
 }
