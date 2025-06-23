@@ -12,6 +12,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 6px;
+    background-color: yellow;
 }
 .logo-nav{
 
@@ -23,12 +24,14 @@ height: 9VH;
     color: white;
     background-color: black;
     border-radius: 90px;
+    border-color: black;
 }
 .donwload{
     background-color: yellow;
     border-radius: 10px;
     text-decoration: none;
     color: black;
+    border-color: black;
 }
 /* img{
     height: 50px;
@@ -50,19 +53,46 @@ h1{
 .container-img-header{
     display:flex;
     gap: 16px;
-    flex-direction: column;
+    
 }
 .cont{
     display: flex;
+    flex-direction: column;
 }
-/* .img-header{
-   
-} */
+.photo-head1{
+    width: 200px;
+    height: 100px;
+}
+.iu{
+    display: flex;
+    flex-direction: column;
+}
+.ui{
+    display: flex;
+    
+}
+.img-head-container{
+    display: flex;
+        flex-direction: column;
+}
+.photo-head2{
+    width: 200px;
+    height: 100px;
+}
+.photo-head3{
+    width: 200px;
+    height: 100px;
+}
+
 main{
 display: flex;
 flex-direction: column;
 background: beige;
 }
+
+/* .texte_contexte{
+    display: flex;
+} */
 .img-contexte{
     width: 10vh;
 height: 3VH;
@@ -83,11 +113,7 @@ height: 3VH;
     display: flex;
     flex-direction: column;
 }
-footer{
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(176, 247, 36);
-} 
+
 
 .info-auteur{
 display: flex;
@@ -113,9 +139,29 @@ width: 25%;
 height: 25%;
 
 }
-.Contacte{
+footer{
     display: flex;
-}
+    justify-content: space-around;
+    background-color: rgb(176, 247, 36);
+} 
+
+
 .reseau{
     display: flex;
 }
+.Contacte {
+    display: flex;
+    
+
+}
+.container-contact {
+    display: flex;
+    
+    
+}
+
+.container-reseau {
+    display: flex;
+    align-items: center;
+}
+ 
