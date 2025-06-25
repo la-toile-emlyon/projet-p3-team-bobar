@@ -72,3 +72,54 @@ html {
 .light-yellow{
   color: #FFFF55;
 }
+
+.grey{
+  color: #D9D9D9;
+}
+
+.vert-clair{
+  background-color: #C4FFCF;
+}
+
+.bleu-fonce{
+  background-color:#0400BF;
+  color: white;
+}
+
+
+
+
+.chloe {
+    background-color: #83b5eb;
+      width: 40%;
+    height: 60%;
+    border-radius: 6px;
+}
+
+.m-toumi-professeur {
+    background-color: rgb(216, 187, 113);
+    width: 40%;
+    height: 60%;
+    border-radius: 6px;
+  
+}
+
+.cequi {
+  background-color: rgb(147, 91, 206);
+  width: 70%;
+  height: 30%;
+}
+
+.laura {
+    background-color: rgb(161, 160, 158);
+    width: 40%;
+    height: 60%;
+    border-radius: 6px;
+}
+
+.Amine {
+  background-color: rgb(161, 160, 158);
+  width:40% ;
+  height: 60%;
+  border-radius: 6px;
+}

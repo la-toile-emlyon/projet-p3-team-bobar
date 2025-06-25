@@ -287,7 +287,7 @@ gap: 16px;
     justify-content: center;
     align-items: center;
     gap: 2%;
-    font-size: 2em;
+    font-size: 3em;
     width: 100%;
 }
 
@@ -303,10 +303,21 @@ gap: 16px;
     margin-bottom: 6%;
 }
 
+#mission .title{
+    margin: 3vw 0;
+}
+
+#mission h3{
+    margin: 1vw;
+}
 
 #mission h4{
     font-size: 2em;
     margin: 0;
+}
+
+#mission .title{
+    font-family: 'gt-maru';
 }
 
 
@@ -316,10 +327,11 @@ gap: 16px;
     align-items: center;
     justify-content: center;
     gap: 5%;
-    padding: 1.5%;
+    padding: 1%;
     width: 60vw;
     height: 15em;
     filter: drop-shadow(0px 21px 20px rgba(0, 0, 0, 0.25));
+    font-family: 'gt-maru';
 }
 
 .mission-card h4{
@@ -347,6 +359,11 @@ gap: 16px;
 #mission .mission-card:nth-child(2n+1){
     transform: rotate(6.29deg);
     margin-left: -30%;
+    margin-bottom: -1vw;
+}
+
+#mission .mission-card:nth-child(2n+1){
+    z-index: 10;
 }
 
 /** FIN Section mission */
@@ -359,16 +376,31 @@ gap: 16px;
 
 
 
-
-
 #fontionalite-2{
-    display: flex;
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    max-width: 1300px;
+    margin: 80px auto;
+    align-items: stretch;
 }
 .img-fontionalité2{
 width: 50vh;
 height: 50vh; 
+} 
+.images-f2{
+    display: flex;
+    gap:8px;
+    
 }
 
+.card1-fontionalite2.violet-pale {
+    background-color: var(--violet);
+    color: var(--blanc);
+    padding: 32px;
+    border-radius: 20px;
+    flex: 1; /* Permet à la carte de s'adapter en hauteur */
+}
 /*section 3*/
 #fontionalite-3 {
     display: grid;
@@ -456,6 +488,9 @@ height: 50vh;
     overflow: hidden;
     min-height: 500px;
 }
+.card4-fonctionalité4{
+    
+}
 .card4-fonctionalité4 .mockups-container-f4 {
     position: relative;
     width: 100%;
@@ -478,6 +513,7 @@ height: 50vh;
 .card4-scan-result img {
     width: 100%;
     height: auto;
+    
 }
 /* Conteneur pour les deux cartes du bas à droite */
 .contenu-bas-droite-f4 {
@@ -569,4 +605,7 @@ height: 50vh;
         height: auto;
     }
      .card-col-3 { height: 500px; }
+
+     
 }
+
