@@ -113,6 +113,7 @@
     justify-content: center;
     font-family: 'gt-maru';
     gap: 2vw;
+    height: 60vh;
 }
 
 #equipe img{
@@ -485,12 +486,25 @@ body {
 
 .evo-blocs{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
     width: 100%;
 }
 
 .evo-bloc{
-    width: 50%;
-    height: 100%;
+    width: 49%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.evo-bloc.orange{
+    z-index: 1;
+}
+.evo-bloc img{
+    width: 100%;
+    object-fit: contain;
 }
