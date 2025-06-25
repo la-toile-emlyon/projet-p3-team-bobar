@@ -1,8 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'gt-maru', sans-serif;
-}
+
 /** Section Cible **/
 
 #cible .title div{
@@ -17,14 +13,8 @@ body {
 
 
 #cible .title{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #7C00FF ;
-    width: 60%;
-    gap: 0px;
-    margin-bottom: 6%;
+      margin: 3vw 0;
 }
 
 
@@ -37,11 +27,11 @@ body {
     margin: 0;
 }
 
-#cible .title{
+/* #cible .title{
     font-family: 'gt-maru';
      margin: 3vw 0;
     z-index: 200;
-}
+} */
 
 
 .cible-card{
