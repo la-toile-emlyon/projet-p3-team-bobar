@@ -6,82 +6,98 @@ body{
     height: 100%;
     
 }
+
+/* Barre de Nav*/
 nav{
-    height: 50px;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 8vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px;
-    background-color: yellow;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    background: white;
+    z-index: 2;
 }
-.logo-nav{
-
-width: 30vh;
-height: 9VH;
+nav #logo{
+    width: fit-content;
 }
-.Document{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    border-radius: 90px;
-    border-color: black;
+nav #logoV{
+    width: 24%;
 }
-.donwload{
-    background-color: yellow;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    border-color: black;
-}
-/* img{
-    height: 50px;
-    width: 50px;
-} */
-header{
-    width: 100%;
-    height: 100%;
-    background: beige;
-    
+nav #bouton{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 6px;
-}
-h1{
-    color: rgb(19, 31, 156);
-}
-.container-img-header{
-    display:flex;
     gap: 16px;
-    
+    padding: 0;
+    margin: 0;
+    height: fit-content;
 }
-.cont{
+nav li{
+    list-style: none;
+    height: fit-content;
+}
+nav .bouton1, nav .bouton2{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 100px;
+    display: inline-flex;
+    padding: 20px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all .2s ease-in-out;
+}
+nav .bouton1{
+    background: #7C00FF;
+    color: white;
+}
+nav .bouton1:hover{
+    background: #BE80FF;
+}
+nav .bouton2{
+    background: transparent;
+    color: #7C00FF;
+    box-shadow: inset 0px 0px 0px 5px #7C00FF;
+    box-sizing: border-box;
+}
+nav .bouton2:hover{
+    background: transparent;
+    color: #BE80FF;
+    box-shadow: inset 0px 0px 0px 5px #BE80FF;
+    box-sizing: border-box;
+}
+
+/*Header*/
+header{
+    margin-top: 8vw;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+header .card1{
     display: flex;
+    width: 39vw;
+    padding: 32px 32px 32px 32px;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 31px;
+    border-radius: 16px;
 }
-.photo-head1{
-    width: 200px;
-    height: 100px;
+header .card1 h1{
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 44px; /* 100% */
+    letter-spacing: -3.36px;
+    margin: 0;
 }
-.iu{
-    display: flex;
-    flex-direction: column;
-}
-.ui{
-    display: flex;
-    
-}
-.img-head-container{
-    display: flex;
-        flex-direction: column;
-}
-.photo-head2{
-    width: 200px;
-    height: 100px;
-}
-.photo-head3{
-    width: 200px;
-    height: 100px;
+header .card1 #logoB{
+    /*width: 613px;*/
+    height: 11vw;
 }
 
 main{
@@ -90,28 +106,16 @@ flex-direction: column;
 background: beige;
 }
 
-/* .texte_contexte{
-    display: flex;
-} */
+
 .img-contexte{
     width: 10vh;
-height: 3VH;
+    height: 3VH;
 }
 
-/* section{
-    width: 200vh;
-    height: 200vh;
-    background-color: aqua;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 16px;
-    margin-bottom: 6px;
-
-} */
 .fontionnalité{
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -166,3 +170,136 @@ footer{
     list-style-type: none;
 }
  
+
+/** Section mission **/
+
+#mission .title div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    font-size: 2em;
+    width: 100%;
+}
+
+
+#mission .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7C00FF ;
+    width: 60%;
+    gap: 0px;
+    margin-bottom: 6%;
+}
+
+
+#mission h4{
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+.mission-card{
+    display: flex;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 1.5%;
+    width: 60vw;
+    height: 15em;
+    filter: drop-shadow(0px 21px 20px rgba(0, 0, 0, 0.25));
+}
+
+.mission-card h4{
+    width: 70%;
+    font-size: 2.2em;
+}
+
+.mission-card img{
+    width: 15%;
+}
+
+#mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#mission .mission-card:nth-child(2n+1){
+    transform: rotate(-2.035deg);
+    margin-left: 30%;
+}
+
+#mission .mission-card:nth-child(2n){
+    transform: rotate(6.29deg);
+    margin-left: -30%;
+}
+
+/** FIN Section mission */
+
+#fontionalite-1{
+    display: flex;
+    margin-top: 16px;
+    gap: 8px;
+    
+    
+}
+
+.card1-fontionalité1{
+    
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.img-fontionalité{
+width: 50vh;
+height: 50vh;
+    
+}
+
+.img-fontionalité2{
+width: 50vh;
+height: 50vh;
+    
+}
+
+.card2-fontionalité1{
+    
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+}
+.cont-card1-card2{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 60%;
+    
+
+}
+
+ .card3-fontionalité1{
+    width: 40%;
+    height: 50vh;
+    border-radius: 8px;
+    display: inline-flex;
+padding: 88px 114px 79px 101px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+gap: 16px;
+   
+} 
+

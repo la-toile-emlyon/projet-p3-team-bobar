@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'gt-maru';
-  src: url('GTMaruVF-Regular.otf') format('opentype');
+  src: url('asset/fonts/GTMaruVF-Regular.otf') format('opentype');
 }
 
 
@@ -10,6 +10,61 @@ html {
   font-family: 'gt-maru', sans-serif ;
 }
 
-p{
+&::-webkit-scrollbar {
+   -ms-overflow-style: none;
+   overflow: -moz-scrollbars-none;
+   display: none;
+   width: 0;
+   background: transparent;
+   background-color: transparent;
+ }
+ 
+ &::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px transparent;
+   background-color: transparent;
+ }
+ 
+ &::-webkit-scrollbar-thumb {
+   background-color: transparent;
+ }
+ * {
+   scrollbar-width: none; /* Firefox implementation */
+   scrollbar-color: transparent transparent;
+ }
+ @-moz-document url-prefix() { /* Disable scrollbar Firefox */
+   html{
+     scrollbar-width: none;
+   }
+ }
+
+/* p{
   color: blue;
+} */
+
+.bleu{
+  background-color: #1B95FF;
+}
+
+.orange{
+  background-color: #FF9614;
+  color: black;
+}
+
+.vert{
+  background-color: #2ACA46;
+  color: white;
+}
+
+.jaune{
+  background-color: #FFE180;
+}
+
+.violet-fonce{
+  background-color: #7C00FF;
+  color: white;
+}
+
+.violet-pale{
+  background-color: #E1C5FF;
+  color: #7C00FF;
 }

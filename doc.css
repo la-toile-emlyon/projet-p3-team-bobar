@@ -16,7 +16,7 @@ img{
     height: 50px;
     width: 50px;
 }
-/* header{
+ header{
     width: 200vh;
     height: 200vh;
     background-color: rgb(255, 0, 187);
@@ -25,14 +25,14 @@ img{
     align-items: center;
     padding: 16px;
     margin-bottom: 6px;
-} */
+} 
 
 main{
 display: flex;
 flex-wrap: wrap;
 }
 
-/* section{
+ section{
     width: 200vh;
     height: 200vh;
     background-color: rgb(255, 255, 255);
@@ -42,7 +42,7 @@ flex-wrap: wrap;
     padding: 16px;
     margin-bottom: 6px;
 
-} */
+} 
 
 footer{
     display: flex;
