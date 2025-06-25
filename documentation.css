@@ -1,3 +1,34 @@
+/** Debut problematique*/
+
+#probleme{
+    display: flex;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 1%;
+    width: 60vw;
+    height: 15em;
+    filter: drop-shadow(0px 21px 20px rgba(0, 0, 0, 0.25));
+    font-family: 'gt-maru';
+}
+.probleme-card-pb {
+    border-radius: 10px;
+    
+}
+.pb-container{
+    display: flex;
+    justify-content: center;
+}
+
+.probleme-card-pb p{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-family: 'gt-maru';
+}
+
+
 
 /** Section Cible **/
 
@@ -6,15 +37,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2%;
-    font-size: 3em;
     width: 100%;
 }
 
 
 #cible .title{
     flex-direction: column;
-      margin: 3vw 0;
+    margin: 10vw 0;
 }
 
 
@@ -23,15 +52,8 @@
 }
 
 #cible h4{
-    font-size: 2em;
     margin: 0;
 }
-
-/* #cible .title{
-    font-family: 'gt-maru';
-     margin: 3vw 0;
-    z-index: 200;
-} */
 
 
 .cible-card{
@@ -81,6 +103,8 @@
 
 /** FIN Section cible */
 
+
+
 #equipe{
     display: flex;
     flex-direction: column;
@@ -99,7 +123,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-        gap: 2vw;
+    gap: 2vw;
               
 
 }
@@ -114,12 +138,18 @@
     padding: 1vw;
 }
 
+#equipe .title{
+    margin: 2dvw;
+}
+
 .white{
     color:white
 }
 
 .team-container{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 50vw;
     gap: 2vw;
 }
@@ -355,8 +385,7 @@ body {
 }
 
 .persona-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 24px;
 }
 
@@ -406,6 +435,8 @@ body {
 
 .persona-col-droite{
     border-radius: 20px;
+    height: 484px;
+    margin-top: 13px;
 }
 
 .persona-col-droite .photo-card {
@@ -420,9 +451,7 @@ body {
     overflow: hidden;
 }
 
-.info-full-width {
-    margin-top: 24px;
-}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -430,3 +459,21 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.bouton-download {
+    display: flex;
+    align-items: center;
+    background-color: var(--blanc);
+    color: var(--noir);
+    margin: 1vw;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+}
+.bouton-download:hover { transform: scale(1.03); }
+.bouton-download img { width: 40px; height: 40px; margin-right: 12px; }
+.text-download p:first-child { font-size: 0.9rem; margin: 0; line-height: 1; }
+.text-download p:last-child { font-family: var(--font-title); font-size: 1.3rem; margin: 0; line-height: 1.2; font-weight: 700;}
