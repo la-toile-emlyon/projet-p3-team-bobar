@@ -7,15 +7,15 @@
     justify-content: center;
     flex-direction: column;
     gap: 5%;
-    padding: 1%;
     width: 60vw;
-    height: 15em;
-    filter: drop-shadow(0px 21px 20px rgba(0, 0, 0, 0.25));
     font-family: 'gt-maru';
 }
 .probleme-card-pb {
-    border-radius: 10px;
-    
+    border-radius: 20px;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
 }
 .pb-container{
     display: flex;
@@ -53,6 +53,7 @@
 
 #cible h4{
     margin: 0;
+    font-size: 2em;
 }
 
 
@@ -419,6 +420,7 @@ body {
 
 .persona-card.infos {
     background-color: var(--jaune-pale);
+    margin-top: 16px;
 }
 
 .persona-card.infos h5 {
@@ -435,8 +437,8 @@ body {
 
 .persona-col-droite{
     border-radius: 20px;
-    height: 484px;
-    margin-top: 13px;
+    height: 508px;
+    
 }
 
 .persona-col-droite .photo-card {
@@ -450,6 +452,8 @@ body {
     object-fit: cover;
     overflow: hidden;
 }
+/**evolution maquette*/
+
 
 
 
@@ -477,3 +481,16 @@ body {
 .bouton-download img { width: 40px; height: 40px; margin-right: 12px; }
 .text-download p:first-child { font-size: 0.9rem; margin: 0; line-height: 1; }
 .text-download p:last-child { font-family: var(--font-title); font-size: 1.3rem; margin: 0; line-height: 1.2; font-weight: 700;}
+
+
+.evo-blocs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+}
+
+.evo-bloc{
+    width: 50%;
+    height: 100%;
+}

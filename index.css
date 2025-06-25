@@ -300,7 +300,7 @@ header{
 
 #mission .title{
     margin: 3vw 0;
-      z-index: 200;
+      /* z-index: 200; */
 }
 
 #mission h3{
@@ -646,7 +646,7 @@ header{
 }
 
 .temoignage-card{
-    border-radius: 6px;
+    border-radius: 20px;
     padding: 1vw;
 }
 
