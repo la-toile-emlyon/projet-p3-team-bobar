@@ -186,15 +186,12 @@ header{
 }
 /* Style des boutons de téléchargement (identique à votre fichier) */
 
-.download{
-gap: 16px;
-
-}
 .bouton-download {
     display: flex;
     align-items: center;
     background-color: var(--blanc);
     color: var(--noir);
+    margin: 1vw;
     padding: 12px;
     border-radius: 12px;
     text-decoration: none;
