@@ -121,7 +121,7 @@ header{
 }
 .card-col-1-top h1 {
     font-family: var(--font-title);
-    font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+    font-size: 30px;
     line-height: 1.1;
     font-weight: 700;
     margin: 0;
@@ -185,6 +185,11 @@ header{
     object-fit: contain;
 }
 /* Style des boutons de téléchargement (identique à votre fichier) */
+
+.download{
+gap: 16px;
+
+}
 .bouton-download {
     display: flex;
     align-items: center;
@@ -195,6 +200,7 @@ header{
     text-decoration: none;
     transition: transform 0.2s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
 }
 .bouton-download:hover { transform: scale(1.03); }
 .bouton-download img { width: 40px; height: 40px; margin-right: 12px; }
@@ -249,6 +255,8 @@ header{
     height: 100%;
     object-fit: cover;
 }
+
+
 /* Style de la carte bleue (colonne de droite) */
 .card3-fontionalite1.bleu {
     width: 40%;
@@ -342,7 +350,153 @@ width: 50vh;
 height: 50vh; 
 }
 
+/*section 3*/
+#fontionalite-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    max-width: 1300px;
+    margin: 80px auto;
+    align-items: stretch;
+}
+.colonne-f3 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.card3-fontionalite3 {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+.card3-fontionalite3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card3-fontionalite3.vert-fonce {
+    background-color: var(--vert-fonce);
+}
+.card3-fontionalite3.vert-clair {
+    background-color: var(--vert-clair);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card3-fontionalite3 .mockups-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card3-fontionalite3.violet-pale {
+    background-color: var(--violet-pale);
+    color: var(--violet);
+    padding: 32px;
+    display: flex;
+    align-items: center;
+}
+.card3-fontionalite3.violet-pale h3 {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.card3-fontionalite3.orange {
+    background-color: var(--orange);
+    color: var(--noir);
+    padding: 32px;
+    display: flex;
+    align-items: center;
+}
+.card3-fontionalite3.orange p {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
 
+/*section 4*/
+#fontionalite-4 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Colonne gauche plus petite */
+    grid-template-rows: auto auto;
+    gap: 24px;
+    max-width: 1300px;
+    margin: 80px auto;
+    align-items: stretch;
+}
+/* Carte violette à gauche qui s'étend sur 2 lignes */
+.card4-fonctionalité4.violet-fonce {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: var(--violet);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
+.card4-fonctionalité4 .mockups-container-f4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Carte avec le scan du téléphone */
+.card4-scan-result {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: var(--violet-pale);
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card4-scan-result img {
+    width: 100%;
+    height: auto;
+}
+/* Conteneur pour les deux cartes du bas à droite */
+.contenu-bas-droite-f4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 24px;
+}
+.contenu-bas-droite-f4 .card4-image,
+.contenu-bas-droite-f4 .card4-texte {
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.contenu-bas-droite-f4 .card4-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenu-bas-droite-f4 .card4-texte {
+    background-color: var(--jaune);
+    padding: 32px;
+    color: var(--violet);
+}
+.contenu-bas-droite-f4 .card4-texte h3 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+.contenu-bas-droite-f4 .card4-texte p {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--noir);
+}
 
 
 &::-webkit-scrollbar {
