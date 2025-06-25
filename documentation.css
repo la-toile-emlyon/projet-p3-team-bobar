@@ -22,9 +22,6 @@
     margin-bottom: 6%;
 }
 
-#cible .title{
-    margin: 3vw 0;
-}
 
 #cible h3{
     margin: 1vw;
@@ -37,6 +34,8 @@
 
 #cible .title{
     font-family: 'gt-maru';
+     margin: 3vw 0;
+    z-index: 200;
 }
 
 
@@ -106,6 +105,8 @@
     align-items: center;
     justify-content: center;
         gap: 2vw;
+              
+
 }
 
 #equipe .team-member{
