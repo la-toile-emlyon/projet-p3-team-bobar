@@ -273,6 +273,12 @@ gap: 16px;
     height: auto;
     object-fit: contain;
 }
+
+
+
+
+
+
 /** Section mission **/
 
 #mission .title div{
@@ -299,7 +305,7 @@ gap: 16px;
 
 
 #mission h4{
-    font-size: 1.2em;
+    font-size: 2em;
     margin: 0;
 }
 
@@ -318,7 +324,7 @@ gap: 16px;
 
 .mission-card h4{
     width: 70%;
-    font-size: 2.2em;
+    font-family: 'gt-maru';
 }
 
 .mission-card img{
@@ -333,18 +339,31 @@ gap: 16px;
     gap: 16px;
 }
 
-#mission .mission-card:nth-child(2n+1){
+#mission .mission-card:nth-child(2n){
     transform: rotate(-2.035deg);
     margin-left: 30%;
 }
 
-#mission .mission-card:nth-child(2n){
+#mission .mission-card:nth-child(2n+1){
     transform: rotate(6.29deg);
     margin-left: -30%;
 }
 
 /** FIN Section mission */
 
+
+
+
+
+
+
+
+
+
+
+#fontionalite-2{
+    display: flex;
+}
 .img-fontionalité2{
 width: 50vh;
 height: 50vh; 
