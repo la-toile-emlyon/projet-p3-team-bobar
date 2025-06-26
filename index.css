@@ -1,1 +1,717 @@
-/* Le code CSS spécifique à la page d'accueil */
+@font-face {
+  font-family: 'gt-maru';
+  src: url('asset/fonts/GTMaruVF-Regular.otf') format('opentype');
+}
+
+:root {
+    --violet: #7C00FF;
+    --orange: #FF9B00;
+    --vert: #03D37F;
+    --bleu: #00A9FF;
+    --noir: #202020;
+    --blanc: #FFFFFF;
+    --font-body: 'gt-maru', sans-serif;
+    --font-title: 'gt-maru', sans-serif;
+}
+/* Styles de base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    color: var(--noir);
+    background-color: var(--blanc);
+}
+/* Barre de nav*/
+nav{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    background: white;
+    z-index: 2;
+}
+nav #logo{
+    width: fit-content;
+}
+nav #logoV{
+    width: 24%;
+}
+nav #bouton{
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+nav li{
+    list-style: none;
+    height: fit-content;
+}
+nav .bouton1, nav .bouton2{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 100px;
+    display: inline-flex;
+    padding: 20px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all .2s ease-in-out;
+}
+nav .bouton1{
+    background: #7C00FF;
+    color: white;
+}
+nav .bouton1:hover{
+    background: #BE80FF;
+}
+nav .bouton2{
+    background: transparent;
+    color: #7C00FF;
+    box-shadow: inset 0px 0px 0px 5px #7C00FF;
+    box-sizing: border-box;
+}
+nav .bouton2:hover{
+    background: transparent;
+    color: #BE80FF;
+    box-shadow: inset 0px 0px 0px 5px #BE80FF;
+    box-sizing: border-box;
+}
+
+/* Structure de la grille du Header utilisant l'ID de votre fichier */
+header{
+    margin-top: 8vw;
+}
+
+#header-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    gap: 24px;
+    max-width: 1300px;
+    margin: auto;
+}
+/* Style générique pour les cartes du header */
+#header-card > article {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+#header-card article img.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Colonne 1 */
+.card-col-1-top {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: var(--violet);
+    color: var(--blanc);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-col-1-top h1 {
+    font-family: var(--font-title);
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0;
+}
+.card-col-1-top #logoB {
+    font-family: var(--font-title);
+    font-size: clamp(4rem, 8vw, 6.5rem);
+    line-height: 1;
+    font-weight: 700;
+    word-break: break-all;
+}
+.card-col-1-top #logoB .smiley {
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    background-color: var(--blanc);
+    color: var(--violet);
+    border-radius: 50%;
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 1.1;
+    margin: 0 0.05em;
+}
+.card-col-1-bottom {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: var(--orange);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+/* Colonne 2 */
+.card-col-2-top {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.card-col-2-bottom {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.card-col-2-bottom .vert {
+    background-color: #2ACA46;
+    color: white;
+}
+/* Colonne 3 */
+.card-col-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-color: var(--bleu);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-col-3 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+/* Style des boutons de téléchargement (identique à votre fichier) */
+
+.bouton-download {
+    display: flex;
+    align-items: center;
+    background-color: var(--blanc);
+    color: var(--noir);
+    margin: 1vw;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+}
+.bouton-download:hover { transform: scale(1.03); }
+.bouton-download img { width: 40px; height: 40px; margin-right: 12px; }
+.text-download p:first-child { font-size: 0.9rem; margin: 0; line-height: 1; }
+.text-download p:last-child { font-family: var(--font-title); font-size: 1.3rem; margin: 0; line-height: 1.2; font-weight: 700;}
+
+/* Styles pour la section #fontionalite-1 */
+#fontionalite-1 {
+    display: flex;
+    gap: 24px;
+    max-width: 1300px;
+    margin: auto;
+    align-items: stretch; /* Assure que les colonnes ont la même hauteur */
+}
+/* Conteneur de la colonne de gauche */
+.cont-card1-card2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+/* Style de la carte verte (en haut à gauche) */
+.card1-fontionalite1.vert {
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: 32px;
+    border-radius: 20px;
+    flex: 1; /* Permet à la carte de s'adapter en hauteur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card1-fontionalite1 h3 {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+.card1-fontionalite1 p {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+/* Style de la carte orange (en bas à gauche) */
+.card2-fontionalite1.orange {
+    background-color: var(--orange);
+    border-radius: 20px;
+    overflow: hidden; /* Pour que l'image respecte les coins arrondis */
+    flex: 1;
+}
+.card2-fontionalite1 .img-fontionalite2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Style de la carte bleue (colonne de droite) */
+.card3-fontionalite1.bleu {
+    width: 40%;
+    background-color: var(--bleu);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card3-fontionalite1 .img-fontionalite {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+
+/** Section mission **/
+
+#mission .title div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+}
+
+
+#mission .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7C00FF ;
+    width: 60%;
+    gap: 0px;
+    margin-bottom: 6%;
+}
+
+#mission .title{
+    margin: 3vw 0;
+      /* z-index: 200; */
+}
+
+#mission h3{
+    margin: 1vw;
+  
+}
+
+#mission .text-card{
+    margin: 0;
+    font-size: 2em;
+}
+
+#mission .title{
+    font-family: 'gt-maru';
+}
+
+
+.mission-card{
+    display: flex;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 1%;
+    width: 60vw;
+    height: 15em;
+    filter: drop-shadow(0px 21px 20px rgba(0, 0, 0, 0.25));
+    font-family: 'gt-maru';
+}
+
+.mission-card h4{
+    width: 70%;
+    font-family: 'gt-maru';
+}
+
+.mission-card img{
+    width: 15%;
+}
+
+#mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#mission .mission-card:nth-child(2n){
+    transform: rotate(-2.035deg);
+    margin-left: 30%;
+}
+
+#mission .mission-card:nth-child(2n+1){
+    transform: rotate(6.29deg);
+    margin-left: -30%;
+    margin-bottom: -1vw;
+}
+
+#mission .mission-card:nth-child(2n+1){
+    z-index: 10;
+}
+
+/** FIN Section mission */
+
+
+
+
+
+
+
+
+
+#fontionalite-2{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1300px;
+    margin: 80px auto;
+    align-items: stretch;
+}
+
+.contenu-f2{
+    grid-column: 2/span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card-mockup-f2{
+    grid-column: 1/span 1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: #E1C5FF;
+    border-radius: 20px;
+}
+
+.img-fontionalité2{
+width: 50vh;
+height: 50vh;
+border-radius: 20px;
+aspect-ratio: 1;
+} 
+
+.images-f2{
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    
+}
+
+.card1-fontionalite2.violet-pale {
+    background-color: var(--violet);
+    color: var(--blanc);
+    padding: 32px;
+    border-radius: 20px;
+    flex: 1; /* Permet à la carte de s'adapter en hauteur */
+}
+
+/*section 3*/
+#fontionalite-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    max-width: 1300px;
+    margin: 80px auto;
+    align-items: stretch;
+}
+.colonne-f3 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.card3-fontionalite3 {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    
+}
+.card3-fontionalite3.violet-fonce {
+    padding: 33px;
+}
+
+.card3-fontionalite3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card3-fontionalite3.vert-fonce {
+    background-color: var(--vert-fonce);
+}
+.card3-fontionalite3.vert-clair {
+    background-color: var(--vert-clair);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card3-fontionalite3 .mockups-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card3-fontionalite3.violet-pale {
+    background-color: var(--violet-pale);
+    color: var(--violet);
+    padding: 32px;
+    display: flex;
+    align-items: center;
+}
+.card3-fontionalite3.violet-pale h3 {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.card3-fontionalite3.orange {
+    background-color: var(--orange);
+    color: var(--noir);
+    padding: 32px;
+    display: flex;
+    align-items: center;
+}
+.card3-fontionalite3.orange p {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/*section 4*/
+#fontionalite-4 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Colonne gauche plus petite */
+    grid-template-rows: auto auto;
+    gap: 24px;
+    max-width: 1300px;
+    margin: 80px auto;
+    align-items: stretch;
+}
+/* Carte violette à gauche qui s'étend sur 2 lignes */
+.card4-fonctionalité4.violet-fonce {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: var(--violet);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+
+
+.card4-fonctionalité4 .mockups-container-f4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Carte avec le scan du téléphone */
+.card4-scan-result {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #FFE180;
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card4-scan-result img {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+/* Conteneur pour les deux cartes du bas à droite */
+.contenu-bas-droite-f4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 24px;
+}
+.contenu-bas-droite-f4 .card4-image,
+.contenu-bas-droite-f4 .card4-texte {
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.contenu-bas-droite-f4 .card4-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenu-bas-droite-f4 .card4-texte {
+    background-color: var(--jaune);
+    padding: 32px;
+    color: var(--violet);
+}
+.contenu-bas-droite-f4 .card4-texte h3 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+.contenu-bas-droite-f4 .card4-texte p {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--noir);
+}
+.card1-fontionalite1.violet-pale{
+    padding: 33px;
+    border-radius: 16px;
+}
+
+
+&::-webkit-scrollbar {
+   -ms-overflow-style: none;
+   overflow: -moz-scrollbars-none;
+   display: none;
+   width: 0;
+   background: transparent;
+   background-color: transparent;
+ }
+ 
+ &::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px transparent;
+   background-color: transparent;
+ }
+ 
+ &::-webkit-scrollbar-thumb {
+   background-color: transparent;
+ }
+ * {
+   scrollbar-width: none; /* Firefox implementation */
+   scrollbar-color: transparent transparent;
+ }
+ @-moz-document url-prefix() { /* Disable scrollbar Firefox */
+   html{
+     scrollbar-width: none;
+   }
+ }
+
+
+header{
+    padding-top: 4.5vw;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    #header-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .card-col-1-top { grid-column: 1/2; grid-row: 1/2; }
+    .card-col-1-bottom { grid-column: 1/2; grid-row: 2/3; }
+    .card-col-2-top { grid-column: 2/3; grid-row: 1/2; }
+    .card-col-2-bottom { grid-column: 2/3; grid-row: 2/3; }
+    .card-col-3 { grid-column: 1/3; grid-row: 3/4; height: 500px; }
+}
+@media (max-width: 768px) {
+    #header-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+     .card-col-1-top, .card-col-1-bottom, .card-col-2-top, .card-col-2-bottom, .card-col-3 {
+        grid-column: auto;
+        grid-row: auto;
+        height: auto;
+    }
+     .card-col-3 { height: 500px; }
+
+
+}
+
+
+
+/** Avis utilisateurs **/
+#temoignages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vw;
+}
+
+.temoignage-card{
+    border-radius: 20px;
+    padding: 1vw;
+}
+
+.temoignage-card img{
+    object-fit: contain ;
+}
+
+.temoignage-card h2{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.temoignage-card em{
+    font-weight: bold;
+}
+
+.temoignage-card p{
+    font-size: 1.1em;
+}
+
+.top-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.top-card h2, .top-card h3, .top-card span{
+    margin-bottom: 0.1em;
+}
+
+
+#temoignages .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 68vw;
+    gap: 1.5vw;
+}
+
+#chloe, #autres{
+    width: 48%;
+}
+
+#chloe {
+    height:18.vw;
+    background-color: #C4E3FF;
+}
+
+#autres {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+}
