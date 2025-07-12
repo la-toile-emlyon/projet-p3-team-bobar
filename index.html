@@ -1,16 +1,358 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Page d'accueil</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bobard - Header</title>
+    <!-- Police d'écriture arrondie similaire à la maquette -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lien vers la feuille de style externe -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
-
   <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
+    <nav>
+      <a id="logo" href="index.html"
+        ><img id="logoV" src="asset\logos\logoV.svg" alt="Logo Bobard"
+      /></a>
+      <ul id="bouton">
+        <li>
+          <a class="bouton2" href="documentation.html">Documentation</a>
+        </li>
+        <li>
+          <a
+            class="bouton1"
+            href="https://www.figma.com/proto/eefwo7tez1X4LfD8rA0uKM/FR-%F0%9F%93%9D-P3---Projet-de-groupe---Template--Community---Copy-?page-id=1%3A3&node-id=6368-12032&viewport=1060%2C423%2C0.17&t=41YEXqF90GakBSJN-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6368%3A12032&show-proto-sidebar=1"
+            >Télécharger</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!--Header-->
+    <header>
+      <!-- Grille du header avec l'ID de votre fichier : header-card -->
+      <div id="header-card">
+        <!-- Carte Titre (en haut à gauche) -->
+        <article class="card1 violet-fonce card-col-1-top">
+          <h1>Pour un monde<br />sans bobards<br />télécharger</h1>
+          <img id="logoB" src="asset\logos\logoB.svg" alt="Logo Bobard" />
+        </article>
+
+        <!-- Carte Téléchargements (en bas à gauche) -->
+        <article class="card2 orange card-col-1-bottom">
+          <div class="download">
+            <a class="bouton-download" href="#">
+              <img src="asset\logos\logoApple.svg" alt="[Logo d'Apple]" />
+              <div class="text-download">
+                <p>Télécharger sur</p>
+                <p>App Store</p>
+              </div>
+            </a>
+            <a class="bouton-download" href="#">
+              <img
+                src="asset\logos\logoGoogle.svg"
+                alt="[Logo de Google Play]"
+              />
+              <div class="text-download">
+                <p>Télécharger sur</p>
+                <p>Google Play</p>
+              </div>
+            </a>
+          </div>
+        </article>
+
+        <!-- Carte Lapin (en haut au milieu) -->
+        <article class="card2 img card-col-2-top">
+          <img
+            class="bg-image"
+            src="photos\img-lapin.png"
+            alt="[Image d'un lapin avec un téléphone]"
+          />
+        </article>
+
+        <!-- Carte Femme (en bas au milieu) -->
+        <article class="card1 vert card-col-2-bottom">
+          <span class="vert">
+            <img src="photos\img-gens1.png" alt="Photo d'une femme étonnée" />
+          </span>
+        </article>
+
+        <!-- Carte Mockup (à droite) -->
+        <article class="card3 bleu card-col-3">
+          <img
+            src="maquette\MockUp1.png"
+            alt="[Maquette de l'application Bobard]"
+          />
+        </article>
+      </div>
+    </header>
+
+    <!--Section des missions-->
+    <section id="mission">
+      <div class="title">
+        <div>
+          <img src="asset/emojis/cible.svg" alt="cible" />
+          <h3>Notre mission :</h3>
+        </div>
+        <h4 class="subtitle">Réveiller l'esprit critique d'une génération connectée</h4>
+      </div>
+      <div class="mission-card bleu">
+        <img src="asset/emojis/explosion.svg" alt="explosion" />
+        <h4 class="light-yellow text-card">
+          +900 % d’augmentation des deepfakes entre 2019 et 2024. L’info est
+          trafiquée plus vite que jamais. Bobard t’aide à voir clair.
+        </h4>
+      </div>
+      <div class="mission-card violet-fonce">
+        <img src="asset/emojis/interdit.svg" alt="explosion" />
+        <h4 class=" text-card">
+          Stopper la vague : 91 % des Français voient une explosion des fake
+          news. On t’aide à y faire face.
+        </h4>
+      </div>
+      <div class="mission-card vert">
+        <img src="asset/emojis/valide.svg" alt="engrenage" />
+        <h4 class="text-card">
+          Contrer les bots & l’intox : 60 % des fake news sont automatiques.
+          Bobard, c’est ton filtre anti-pipo.
+        </h4>
+      </div>
+      <div class="mission-card orange">
+        <img src="asset/emojis/emoji2.svg" alt="réseau" />
+        <h4 class="text-card">Éveiller l’esprit critique dès le plus jeune âge.</h4>
+      </div>
+      <div class="mission-card bleu-fonce">
+        <img src="asset/emojis/emoji5.svg" alt="tête yeux étoiles" />
+        <h4 class="text-card">
+          Lutter contre les fake news là où elles circulent le plus : les
+          réseaux.
+        </h4>
+      </div>
+      <div class="mission-card violet-fonce">
+        <img src="asset/emojis/emoji1.svg" alt="trophée" />
+        <h4 class="text-card">Utiliser l’humour pour apprendre sans s’ennuyer.</h4>
+      </div>
+      <div class="mission-card jaune">
+        <img src="asset/emojis/emoji3.svg" alt="médaille" />
+        <h4 class="text-card">Combiner IA et pédagogie pour rendre l'info plus claire</h4>
+      </div>
+      <div class="mission-card violet-pale">
+        <img src="asset/emojis/emoji4.svg" alt="trophée" />
+        <h4 class="text-card">Donner à chacun les bons réflexes pour ne plus se faire berner</h4>
+      </div>
+    </section>
+
+    <!-- Section Fonctionnalité 1 utilisant les ID et classes de vos fichiers -->
+    <section id="fontionalite-1">
+      <!-- Conteneur de la colonne de gauche -->
+      <div class="cont-card1-card2">
+        <!-- Carte verte (en haut) -->
+        <div class="card1-fontionalite1 vert">
+          <h3>#1 Quiz Anti-Fake News</h3>
+          <p>
+            Tester et renforcer les connaissances des utilisateurs sur les fake
+            news.
+          </p>
+        </div>
+        <!-- Carte orange avec image (en bas) -->
+        <div class="card2-fontionalite1 orange">
+          <img
+            class="img-fontionalite2"
+            src="photos\img-gens2.png"
+            alt="Photo d'un homme souriant"
+          />
+        </div>
+      </div>
+      <!-- Carte bleue de droite avec la maquette -->
+      <div class="card3-fontionalite1 bleu">
+        <img
+          class="img-fontionalite"
+          src="maquette\MockUp2.png"
+          alt="Maquette du Quiz"
+        />
+      </div>
+    </section>
+
+    <!-- Section Fonctionnalité 2 -->
+    <section id="fontionalite-2">
+      <!-- Carte de gauche avec la maquette -->
+      <div class="card-mockup-f2">
+        <img
+          class="img-fontionalite-f2 violet-pale"
+          src="maquette\MockUp3.png"
+          alt="[Maquette de la leçon interactive]"
+        />
+      </div>
+      <!-- Contenu de droite -->
+      <div class="contenu-f2">
+        <!-- Images du haut -->
+        <div class="images-f2">
+          <img
+            class="img-fontionalité2"
+            src="photos\image ia 1.png"
+            alt="[Image d'un lapin]"
+          />
+          <img
+            class="violet-pale img-fontionalité2"
+            src="photos\img-gens3.png"
+            alt="[Image d'un homme souriant]"
+          />
+        </div>
+        <!-- Carte violette du bas -->
+        <div class="card1-fontionalite1 vert">
+          <h3>#2 Leçon interactive avant chaque quiz</h3>
+          <p>Apprendre avant de jouer pour maximiser la compréhension.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fontionalite-3">
+      <!-- Colonne de gauche avec 2 images -->
+      <div class="colonne-f3 gauche">
+        <div class="card3-fontionalite3">
+          <img
+            src="photos\pigeon.png"
+            alt="[Image d'un lapin avec un téléphone]"
+          />
+        </div>
+        <div class="card3-fontionalite3 vert">
+          <img
+            src="photos\capybara.png"
+            alt="[Image d'un capybara sur un crocodile]"
+          />
+        </div>
+      </div>
+      <!-- Colonne du milieu avec les mockups -->
+      <div class="colonne-f3 milieu">
+        <div class="card3-fontionalite3 vert">
+          <div class="mockups-container">
+            <!-- Les images des maquettes ont été retirées -->
+            <img src="maquette/MockupBob.png" alt="#" />
+          </div>
+        </div>
+      </div>
+      <!-- Colonne de droite avec les textes -->
+      <div class="colonne-f3 droite">
+        <div class="card3-fontionalite3 violet-fonce card1-fontionalite1 bleu">
+          <h3>#3 Bob, l’IA qui t’accompagne dans ton aventure contre les fake news.</h3>
+        </div>
+        <div class="card3-fontionalite3 orange">
+          <p>
+            Un assistant intelligent qui t’aide à comprendre, poser des questions, et détecter les fake news en direct comme un vrai compagnon de révision.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fontionalite-4">
+      <!-- Colonne de gauche avec mockups -->
+      <div class="card4-fonctionalité4 violet-fonce">
+        <div class="mockups-container-f4">
+          <!-- Les images des maquettes ont été retirées -->
+          <img src="maquette\MockUp6.png" alt="#" />
+        </div>
+      </div>
+      <!-- Carte résultat du scan (en haut à droite) -->
+      <div class="card4-scan-result">
+        <img
+          src="maquette/scan-iphone-long.png"
+          alt="[Image du résultat du scan]"
+        />
+      </div>
+      <!-- Contenu en bas à droite -->
+      <div class="contenu-bas-droite-f4">
+        <div class="card4-image">
+          <img
+            src="photos\img-lapin.png"
+            alt="[Image d'un lapin avec un téléphone]"
+          />
+        </div>
+        <div class="card1-fontionalite1 violet-pale">
+          <h3>#4 Scan IA des réseaux</h3>
+          <p>Pour débusquer les fakes news</p>
+        </div>
+      </div>
+    </section>
+    <section id="temoignages">
+      <div class="top">
+        <div class="temoignage-card" id="chloe">
+            <div class="top-card">
+            <img src="photos/chloe.png" alt="professeur">
+            <div class="name">
+          <h2>Chloé, 17 ans</h2>
+          <h3>Lycéenne</h3>
+           <span class="stars">★★★★★</span>
+          </div>
+          </div>
+         
+          <p>
+            “Avant, je relayais parfois des trucs <em>sans vérifier</em>. Grâce
+            à Bobard, j’ai <em>appris</em> à faire la différence entre une vraie
+            info et une intox. Maintenant je <em>scanne tout</em> avant de
+            partager.”
+          </p>
+          </div>
+        <div id="autres">
+       
+        
+          <div class="temoignage-card violet-pale">
+            <h2>Ce qu’ils disent de nous</h2>
+          </div>
+
+          <div class="temoignage-card jaune">
+             <div class="top-card">
+            <img src="photos/professeur.png" alt="professeur">
+            <div class="name">
+            <h2>M. Toumi, professeur</h2>
+            <span class="stars">★★★★★</span>
+            </div>
+            </div>
+            <p>
+              “J’utilise Bobard en classe pour sensibiliser les élèves.L’appli
+              rend C’est une super ressource pédagogique."
+            </p>
+          </div>
+        </div>
+        </div>
+      
+
+    </section>
+    <footer class="bleu">
+      <div class="top">
+        <img
+          class="logo-bobard"
+          src="asset/logos/bobard-blanc.svg"
+          alt="logo bobard"
+        />
+        <div class="download-footer">
+          <a class="bouton-download" href="#">
+            <img src="asset\logos\logoApple.svg" alt="[Logo d'Apple]" />
+            <div class="text-download">
+              <p>Télécharger sur</p>
+              <p>App Store</p>
+            </div>
+          </a>
+          <a class="bouton-download" href="#">
+            <img src="asset\logos\logoGoogle.svg" alt="[Logo de Google Play]" />
+            <div class="text-download">
+              <p>Télécharger sur</p>
+              <p>Google Play</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="reseaux">
+        <a href="#"><img src="asset/logos/Instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="asset/logos/LinkedIn.png" alt="Linkedin" /></a>
+        <a href="#"><img src="asset/logos/Facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="asset/logos/GitHub.png" alt="Github" /></a>
+      </div> -->
+    </footer>
   </body>
 </html>
